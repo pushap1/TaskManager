@@ -8,6 +8,8 @@ services:
       - ~/.ssh:/root/.ssh
       - ~/.bash_history:/root/.bash_history
       - &bundle-cache-volume bundle_cache:/bundle_cache
+      - /etc/passwd:/etc/passwd:ro
+      - /etc/group:/etc/group:ro
     ports:
       - 3000:3000
       - 3001:3001
