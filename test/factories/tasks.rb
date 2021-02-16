@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :task do
-    name { 'MyString' }
-    description { 'MyText' }
+    name
+    description
     author factory: :manager
     assignee factory: :developer
     state { 'new' }
