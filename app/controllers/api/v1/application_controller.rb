@@ -20,8 +20,8 @@ class Api::V1::ApplicationController < Api::ApplicationController
   end
 
   def per_page
-    per = params.fetch(:per, 10).to_i
-    per > 100 ? 100 : per
+    per_page = params.fetch(:per_page, 10).to_i
+    per_page > 100 ? 100 : per_page
   end
 
   def self.responder
