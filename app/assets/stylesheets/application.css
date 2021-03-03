@@ -19,3 +19,7 @@ body {
 .page-content .mdl-textfield {
   display: block;
 }
+
+.react-kanban-column {
+  min-width: 200px;
+}
