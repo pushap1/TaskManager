@@ -47,9 +47,9 @@ const TaskBoard = () => {
 
   const styles = useStyles();
 
-  const loadColumn = (state, page, perPage) =>
+  const loadColumn = (state, page, perPage, sort = 'id DESC') =>
     TasksRepository.index({
-      q: { stateEq: state },
+      q: { stateEq: state, s: sort },
       page,
       perPage,
     });
