@@ -39,7 +39,7 @@ const Form = ({ errors, onChange, task }) => {
         label="Author"
         value={task.author}
         onChange={handleChangeSelect('author')}
-        isDisabled
+        isDisabled={false}
         isRequired
         isClearable
         errors={has('author', errors)}
@@ -49,7 +49,7 @@ const Form = ({ errors, onChange, task }) => {
         label="Assignee"
         value={task.assignee}
         onChange={handleChangeSelect('assignee')}
-        isDisabled
+        isDisabled={false}
         isClearable
         errors={has('assignee', errors)}
         helperText={errors.author}
