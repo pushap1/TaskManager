@@ -4,7 +4,7 @@ FactoryBot.define do
     description { 'MyText' }
     author factory: :manager
     assignee factory: :developer
-    state { 'MyString' }
+    state { 'new' }
     expired_at { '2021-01-15' }
   end
 end
