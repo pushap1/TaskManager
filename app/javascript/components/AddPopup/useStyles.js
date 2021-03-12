@@ -14,7 +14,7 @@ const useStyles = makeStyles(() => ({
 
   actions: {
     display: 'flex',
-    justifyContent: 'right',
+    justifyContent: 'flex-end',
   },
 
   form: {

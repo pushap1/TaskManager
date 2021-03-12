@@ -1,7 +1,7 @@
 class TaskSerializer < ApplicationSerializer
   attributes :id, :name, :description, :state, :expired_at, :transitions
-  belongs_to :author
-  belongs_to :assignee
+  belongs_to :author, key: :author, serializer: UserSerializer
+  belongs_to :assignee, key: :assignee, serializer: UserSerializer
 
   def transitions
     object.state_transitions.map do |transiion|
