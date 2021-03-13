@@ -38,6 +38,7 @@ services:
       
   ci:
     build: .
+    profiles: ["ci-only"]
     depends_on:
       - db
     environment:
